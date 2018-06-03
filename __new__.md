@@ -7,3 +7,22 @@ class CapStr(str):
 a = CapStr("i love fashC.com")
 print(a)
 ```
+
+```
+class C:
+    def __init__(self):
+        print("__init__")
+
+    def __del__(self):
+        print("__del__")
+
+c1 = C()
+c2 = c1
+c3 = c2
+del c1
+
+print(".............")
+del c2
+print("...........")
+del c3
+```
